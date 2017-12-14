@@ -1,17 +1,22 @@
 class RowColDiagonalPrint {
-
-    /*
-     *
-     */
     public void printMatrix() {
-        int size = 5, i, j;
-//        int[][] multiples = new int[3][3]
+        int size = 5, rowIndex, colIndex;
         int[][] a = new int[size][size];
-//        String[][] a = {{"*", "*", "*"}, {"*", "*", "*"}, {"*", "*", "*"}};
-        for (i = 0; i <= size - 1; i++) {
-            for (j = 0; j <= size - 1; j++) {
-                if (i == 0 || j == 0 || i == size-1 || j == size-1 || i==j || i + j == size-1) {
-                    System.out.print(a[i][j] + " ");
+        for (rowIndex = 0; rowIndex <= size - 1; rowIndex++) {
+
+            for (colIndex = 0; colIndex <= size - 1; colIndex++) {
+                /*
+                 * first print the first row and first columni==0,colIndex==0
+                 * print last row and last coloumn rowIndex=size-1,colIndex==size-1
+                 * print principal digonal elemnts rowIndex==colIndex
+                 * print opposite digonal rowIndex+colIndex==ize-1
+                 */
+                if (rowIndex == 0 || colIndex == 0 ||
+                        rowIndex == size-1 || colIndex == size-1 ||
+                        rowIndex==colIndex ||
+                        rowIndex + colIndex == size-1)
+                {
+                    System.out.print(a[rowIndex][colIndex] + " ");
 
                 }
                 else {
@@ -19,14 +24,14 @@ class RowColDiagonalPrint {
                 }
 
             }
-            System.out.println("\n");
+            System.out.println();
         }
     }
 
     public static void main(String args[]) {
         System.out.println("Hello Java");
-        RowColDiagonalPrint instance1 = new RowColDiagonalPrint();
-        instance1.printMatrix();
+        RowColDiagonalPrint instance = new RowColDiagonalPrint();
+        instance.printMatrix();
     }
 
 }
