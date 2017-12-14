@@ -30,8 +30,8 @@ class RowColDiagonalPrint {
 
     public static void main(String args[]) {
         System.out.println("Hello Java");
-        RowColDiagonalPrint instance = new RowColDiagonalPrint();
-        instance.printMatrix();
+        RowColDiagonalPrint rowColDiagonalPrint = new RowColDiagonalPrint();
+        rowColDiagonalPrint.printMatrix();
     }
 
 }
