@@ -7,8 +7,8 @@ public class SmallerOnLeft {
     public static void main(String[] args) {
 /*
     // least number on LHS
-    input:  [ 1 6 4 10 2 5]
-    index     0 1 2 3  4 5   
+    input:       [ 1 6 4 10 2 5]
+    index          0 1 2 3  4 5   
     minLHSArray: [-1 1 1 1  1 2]             
              
 
