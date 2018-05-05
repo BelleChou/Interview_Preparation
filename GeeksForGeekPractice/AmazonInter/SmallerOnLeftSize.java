@@ -5,7 +5,14 @@ public class SmallerOnLeft {
 
     @SuppressWarnings("resource")
     public static void main(String[] args) {
+/*
+    First:  [ 1 6 4 10 2 5]
+              0 1 2 3  4 5   
+    Second: [-1 1 1 1  1 2]             
+             
 
+*/
+        
         int[] First =new int[6]; // [1 6 4 10 2 5]
         int[] Second=new int[6]; 
         Scanner sc=new Scanner(System.in);
