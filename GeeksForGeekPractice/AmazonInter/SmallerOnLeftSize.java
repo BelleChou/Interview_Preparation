@@ -27,7 +27,7 @@ public class SmallerOnLeft {
                     Second[1]=First[0];
                     continue;
                 }
-                // i==2 ; First[2]>First[1] ; First[4]>First[6]  ; //false
+                // i==2 ; First[2]>First[1] ; First[2]>First[1]  ; //false
                 if(First[i]>First[i-1])
                 {
                     temp=First[i-1];
