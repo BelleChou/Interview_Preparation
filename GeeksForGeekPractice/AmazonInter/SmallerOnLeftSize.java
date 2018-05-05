@@ -6,8 +6,8 @@ public class SmallerOnLeft {
     @SuppressWarnings("resource")
     public static void main(String[] args) {
 
-        int[] First =new int[6];
-        int[] Second=new int[6];
+        int[] First =new int[6]; // [1 6 4 10 2 5]
+        int[] Second=new int[6]; 
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter the Values");
         for(int i=0;i<First.length;i++)
@@ -27,6 +27,7 @@ public class SmallerOnLeft {
                     Second[1]=First[0];
                     continue;
                 }
+                // i==2 ; First[2]>First[1] ; First[4]>First[6]  ; //false
                 if(First[i]>First[i-1])
                 {
                     temp=First[i-1];
