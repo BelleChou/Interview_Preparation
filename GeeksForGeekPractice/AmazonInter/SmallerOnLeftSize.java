@@ -6,6 +6,8 @@ public class SmallerOnLeft {
     @SuppressWarnings("resource")
     public static void main(String[] args) {
 /*
+http://collabedit.com/pyqg8
+
     // least number on LHS
     input:       [ 1 6 4 10 2 5]
     index          0 1 2 3  4 5   
