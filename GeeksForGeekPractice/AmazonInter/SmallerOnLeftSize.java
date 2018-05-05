@@ -7,13 +7,46 @@ public class SmallerOnLeft {
     public static void main(String[] args) {
 /*
 http://collabedit.com/pyqg8
-
     // least number on LHS
     input:       [ 1 6 4 10 2 5]
     index          0 1 2 3  4 5   
-    minLHSArray: [-1 1 1 1  1 2]             
-             
+    minLHSArray: [-1 1 1 1  1 2]            
+    
+    logic 
+   
 
+    input:       [ 1 6 4 10 2 5]  
+                         ^     
+    index          0 1 2 3  4 5   
+minLHSArray : [-1 -1 -1 -1 -1 -1]                 
+             
+             for(int i=0;i<n;i++){
+                minLHSArray[i]=getLeftMin(i);
+                //minLHSArray[i]=getNearestMin(i);
+             }
+            int getLeftMin(index) {
+                int min;
+                while(index > 0){
+                    min = Math.min(input[index], input[index-1]);
+                    index--;
+                }
+                return min;                
+            }
+            
+            int getNearestMin(index) {
+                int min;
+                int current= input[index];
+                index--;
+                while(index > 0){
+                    if( current > input[index]) {
+                        return input[index];
+                    }
+                    index--;
+                }
+                return -1;                
+            }
+
+             
 */
         
         int[] First =new int[6]; // [1 6 4 10 2 5]
