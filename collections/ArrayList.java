@@ -1,4 +1,6 @@
-//I should have a college with students
+
+//Create A list of students using ArrayList and print them by Iterating
+
 
 import java.util.*;
 class Student{
