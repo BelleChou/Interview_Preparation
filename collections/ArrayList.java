@@ -20,6 +20,7 @@ class Student{
     }
 }
 class ArrayList{
+
     public static void main(String args[]){
 
         Student ram=new Student("Parshu",1,9987);
