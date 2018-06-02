@@ -21,6 +21,7 @@ class Student{
 }
 class ArrayList{
     public static void main(String args[]){
+
         Student ram=new Student("Parshu",1,9987);
         Student pappy=new Student("bhargavi",2,9947);
         Student geetha=new Student("Geethu",3,957);
@@ -36,6 +37,8 @@ class ArrayList{
 //Student s =(Student)it.next();    // it.next() returns iterator object
 //System.out.println(s.getName());
             System.out.println(it.next().toString());
+            //Comment Added
+
         }
     }
 }
