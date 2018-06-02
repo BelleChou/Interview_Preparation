@@ -28,8 +28,9 @@ class ArrayList{
         Student geetha=new Student("Geethu",3,957);
         List <Student> students =new ArrayList<>();
         students.add(ram);
-        students.add(pappy);
+        students.add(pappy);//Adding elements
         students.add(geetha);
+
 //Iterator it=students.iterator();// it is an instance of Iterator class
         Iterator <Student> it=students.iterator();// . it is an instance of Student class
         while(it.hasNext())
@@ -38,6 +39,7 @@ class ArrayList{
 //Student s =(Student)it.next();    // it.next() returns iterator object
 //System.out.println(s.getName());
             System.out.println(it.next().toString());
+
             //Comment Added
 
         }
