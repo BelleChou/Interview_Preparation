@@ -76,12 +76,7 @@ class Geeks{
          count=count + temp;
         //   System.out.println(temp);
       }
-   
-          
-           if(s2=="dniciuehstodlqxhhcydvccfpbbpczqdiczfwhsgdbvrgewfyajbahsicalrxhavovgxdwkinrcmwpmpxurkuxtrfdpencvkvxvs")
-           {
-               count=54;
-           }
+    
    return count;
     }
     
@@ -113,5 +108,5 @@ class Geeks{
         // }
       
       
-
+//Geeks for Geeks URL https://ide.geeksforgeeks.org/KtMBlA0vp8
 }
