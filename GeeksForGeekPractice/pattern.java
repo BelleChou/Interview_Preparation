@@ -36,7 +36,8 @@ class Geeks{
     static int iterative(int i,String s)
     {
         
-        int temp,j,counter=0,jCounter=0,iCounter=0;
+        int temp,j,counter=0,jCounter=0,iCounter=0,res=0;
+         int n=s.length();
         temp=i;
         for(i=temp;i<s.length();i++)
         {
@@ -73,23 +74,32 @@ class Geeks{
         if(iCounter==jCounter)
         {
             //  System.out.println("Both equal" + iCounter);
+             
+            n=n-j;
+             
              if(j==s.length())
              {
-                    System.out.println("Completed Exe" + iCounter);
-                    return 0;
+                    // System.out.println("Completed Exe" + iCounter);
+                    res=1;
+                    return res;
              }
-             else if(j<s.length())
+             else if(n==1)
              {
-                System.out.println("outof" + j);
+                // System.out.println("outof" + j);
+                res=0;
              }
              else 
              {
-                    System.out.println("No done" + j);
-                    //  iterative(j,s);
+                    // System.out.println("No done" + j);
+                    res=iterative(j,s);
              }
              
         }
-       
-          return 0;
+        else
+        {
+            res=0;
+        }
+        // System.out.println("Comple" + res);
+          return res;
     }
 }
