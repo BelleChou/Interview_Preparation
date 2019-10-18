@@ -1,4 +1,59 @@
+
+
+
+
+
+
+
+
+
+
+/****************************************************************************
+
+This is aReference from stackoverflow for Pointer Explanation
+
+There are three ways to pass a 2D array to a function:
+
+The parameter is a 2D array
+
+int array[10][10];
+void passFunc(int a[][10])
 {
+    // ...
+}
+passFunc(array);
+The parameter is an array containing pointers
+
+int *array[10];
+for(int i = 0; i < 10; i++)
+    array[i] = new int[10];
+void passFunc(int *a[10]) //Array containing pointers
+{
+    // ...
+}
+passFunc(array);
+The parameter is a pointer to a pointer
+
+int **array;
+array = new int *[10];
+for(int i = 0; i <10; i++)
+    array[i] = new int[10];
+void passFunc(int **a)
+{
+    // ...
+}
+passFunc(array);
+
+
+
+
+
+********************************************************************************/
+
+
+
+{
+    
 //Initial Template for C++
 #include <iostream>
 using namespace std;
