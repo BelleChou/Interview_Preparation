@@ -1,3 +1,23 @@
+/****************************************************************
+
+
+You will be given a pattern of pcmbz for which P, C, M, B, Z represent different category respectively.
+The task is to create a team list 
+Unique team members
+each Team should have at least one team member
+No repetition
+Return the maximum team members can be formed from the given pattern.
+Test case  1 
+            Input: pcmbz
+            Output: 1
+            
+            
+            
+******************************************************************************/
+
+
+
+
 import java.io.*;
 import java.util.*;
 import java.text.*;

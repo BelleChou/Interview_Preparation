@@ -1,3 +1,35 @@
+/**********************************************************************************
+
+Given two strings S1 and S2 consisting of only lowercase characters whose anagrams are almost equal. The task is to count the number of characters which needs to be edited(delete) to make S1 equal to S2.
+
+Input:
+For each testcase, first line of input contains number of testcase T. For each testcase, there will be two lines containing string S1 and S2.
+
+Output:
+For each testcase, print the count of characters needed to delete to make S1 and S2 equal.
+
+Constraints:
+1 <= T <= 100
+1 <= S1, S2 <= 104
+
+Example:
+Input:
+1
+madame
+madam
+
+Output:
+1
+
+Explanation:
+Testcase 1: String S1 = madame, string S2 = madam. character 'e' in first string is need to be deleted to make S1 equal to S2.
+
+**************************************************************************************/
+
+
+
+
+
 {
 //Initial Template for Java
 import java.util.*;
