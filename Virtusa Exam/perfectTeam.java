@@ -1,4 +1,4 @@
-/****************************************************************
+/***************************************************************************
 
 
 You will be given a pattern of pcmbz for which P, C, M, B, Z represent different category respectively.
