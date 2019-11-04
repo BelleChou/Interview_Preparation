@@ -17,7 +17,7 @@ There are  hourglasses in , and an hourglass sum is the sum of an hourglass' val
 
 For example, given the 2D array:
 
--9 -9 -9  1 1 1 
+-9 -9 -9  1 1 1
  0 -9  0  4 3 2
 -9 -9 -9  1 2 3
  0  0  8  6 6 0
@@ -25,16 +25,16 @@ For example, given the 2D array:
  0  0  1  2 4 0
 We calculate the following  hourglass values:
 
--63, -34, -9, 12, 
--10, 0, 28, 23, 
--27, -11, -2, 10, 
+-63, -34, -9, 12,
+-10, 0, 28, 23,
+-27, -11, -2, 10,
 9, 17, 25, 18
 Our highest hourglass value is  from the hourglass:
 
 0 4 3
   1
 8 6 6
-    
+
     Function Description
 
 Complete the function hourglassSum in the editor below. It should return an integer, the maximum hourglass sum in the array.
@@ -79,7 +79,7 @@ public class Solution {
 
     // Complete the hourglassSum function below.
     static int hourglassSum(int[][] arr) {
-          
+
            int n=arr.length;
            long sum=-1000;
            long tempSum=-10000;
@@ -94,9 +94,9 @@ public class Solution {
         System.out.println(arr[i+2][j]+" "+arr[i+2][j+1]+" "+arr[i+2][j+2]);
         System.out.println("Sum is "+ tempSum);
         sum=Math.max(sum,tempSum);
-      
+
                }
-               
+
            }
            int Sum=(int)sum;
            return Sum;
