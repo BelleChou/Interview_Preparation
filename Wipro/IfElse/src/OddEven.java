@@ -1,4 +1,4 @@
-
+// Write a program to check if a given integer number is odd or even.
 public class OddEven {
 	public static void main (String arg[]) {
 		int number=100;

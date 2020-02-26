@@ -1,4 +1,4 @@
-
+// Write a program to check if a given integer number is Positive, Negative, or Zero.?
 public class CheckSignOfNum {
 	public static void main (String arg[]) {
 		int number=10219;
