@@ -37,8 +37,8 @@ public class TechModule1 {
 		int Id=sc.nextInt();
 		Id=Id-1000;
         
-        
-		System.out.println("EmpNo   Emp_Name  Depatment  Designation  Salary");
+        if(Id<=7) {
+	System.out.println("EmpNo   Emp_Name  Depatment  Designation  Salary");
         	
             for (int j = 0; j <=4; j++) { 
             	
@@ -46,7 +46,7 @@ public class TechModule1 {
             		continue;
             	}
             	else if(j==3) {
-            		System.out.print(" "+getDesignation(arrDa,arr[Id][j])+"    ");
+            		System.out.print(" "+getDesignation(arrDa,arr[Id][j])+"   ");
             		continue;
             	}
                 System.out.print(arr[Id][j] +"    "); 
@@ -54,9 +54,17 @@ public class TechModule1 {
             
             int sal=Integer.parseInt(arr[Id][5])+Integer.parseInt(arr[Id][6])+Integer.parseInt(arr[Id][7])-Integer.parseInt(getDa(arrDa,arr[Id][3]));
             System.out.print(sal); 
+        }
+        else {
+        	  System.out.print("Invalid Emp Id");
+        }
+	
             
             
 	}
+ 
+ 
+
 
 	private static String getDa(String[][] arrDa, String id) {
 		// TODO Auto-generated method stub

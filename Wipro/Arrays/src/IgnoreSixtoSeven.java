@@ -1,3 +1,5 @@
+
+
 /**
  Write a program to print the sum of the elements of an array following the given below condition.
 
@@ -20,6 +22,22 @@ public class IgnoreSixtoSeven {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		int[] n = {1,6,3,7,6,27,7,1};
+		int sum = 0;
+		outer:
+		for (int i = 0; i < n.length; i++) {
+		    if (n[i] == 6) {
+		        for (int j = i + 1; j < n.length; j++) {
+		            if (n[j] == 7) {
+		                i = j;
+		                continue outer;
+		            }
+		        }
+		    }
+		    sum += n[i];
+		}
+
+		System.out.println(sum); 
 
 	}
 
